@@ -3,73 +3,184 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Basic-Portfolio</title>
+    <title>Bootstrap-Portfolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
         crossorigin="anonymous">
-
-
-    <style>
-        .footer {
-            background: black;
-            height: 15px;
-            bottom: 0px;
-        }
-
-        .body {
-            /* background: gold; */
-            height: 100%;
-            background-image: url("../images/backgroundimg.png")
-        }
-    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
 </head>
 
+<style>
+    body {
+        height: 100%;
+        background-image: url("/Users/jyoti/Bootstrap-Portfolio/images/backgroundimg.png");
+    }
+
+    #headerStyle {
+        z-index: 99;
+        width: 100%;
+        margin: 0 0 30px;
+        overflow: auto;
+        color: #fff;
+        background: #fff;
+        border-bottom: 2px solid #ccc;
+    }
+
+    #icon {
+        float: left;
+        color: white;
+        padding: 10px;
+        background: #4aaaa5;
+        font-family: Georgia, Times, "Times New Roman", serif;
+        font-size: 25px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    nav a {
+        display: inline-block;
+        padding-left: 15px;
+        margin-left: 15px;
+        line-height: 18px;
+        color: #999;
+        text-decoration: none;
+        border-left: 1px solid #efefef;
+        text-align: center;
+    }
+
+    nav a:first-child {
+        border-left: 0 none;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 960px;
+        margin: 0 auto;
+        clear: both;
+        background: white;
+    }
+
+    #bodyHeading {
+        height: 28px;
+        font-family: 'Georgia', Times, Times New Roman, serif;
+        margin-left: 26px;
+        font-size: 20px;
+        padding-top: 30px;
+        color: #01B6AD;
+    }
+
+    hr {
+        border: 1px solid #cccccc;
+        width: 900px;
+    }
+
+    section {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    h1 {
+        padding-bottom: 20px;
+        font-size: 30px;
+        line-height: 49px;
+        border-bottom: 3px solid #ddd;
+        font-family: Georgia, Times, "Times New Roman", serif;
+        font-weight: 700;
+        color: #4aaaa5;
+    }
+
+    .main-section {
+        float: left;
+        width: 100%;
+        max-width: 960px;
+        padding: 30px;
+        margin: 0 0 40px;
+        background: #fff;
+        border: 1px solid #ddd;
+    }
+
+    p {
+        font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+        line-height: 24px;
+        font-size: 16px;
+    }
+
+    img {
+        float: left;
+        width: 200px;
+        height: auto;
+        margin-top: 10px;
+        margin-right: 25px;
+    }
+</style>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light  bg-light">
-            <a class="navbar-brand col-md-8" href="#">Jyoti Kumari</a>
-            <div class="collapse navbar-collapse col-md-4" id="navbarSupportedContent">
-                <ul class="navbar-nav navbar-right">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+    <header id="headerStyle">
+        <div class="container">
+            <section>
+                <nav class="navbar navbar-light navbar-expand-md bg-white justify-content-center">
+
+                    <a href="/" class="navbar-brand d-flex w-50 mr-auto" style="float: left">
+                        <div id="icon">JYOTI KUMARI</div>
+                    </a>
+
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+                        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </section>
+
+        </div>
     </header>
 
     <div class="container">
-        <div> About Me</div>
-        <hr>
-        <div>
-            <img src="http://placehold.it/200x200" class="img-fluid img-responsive align-items-center" alt="Profile picture">
-            <p>
-                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by
-                injected humour, or randomised words which don't look even slightly believable. If you are going to use a
-                passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
-                All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this
-                the first true generator on the Internet. </p>
-            <p>It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate
-                Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected
-                humour, or non-characteristic words etc. There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by injected humour, or randomised words which don't
-                look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there
-                isn't anything embarrassing hidden in the middle of text.</p>
-            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the
-                first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful
-                of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is
-                therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
-        </div>
+        <section class="main-section">
+            <h1> About Me</h1>
+            <div>
+                <img src="http://placehold.it/200x200" alt="Profile picture">
+                <p>
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by
+                    injected humour, or randomised words which don't look even slightly believable. If you are going to use
+                    a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle
+                    of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,
+                    making this the first true generator on the Internet. </p>
+                <p>It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate
+                    Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition,
+                    injected humour, or non-characteristic words etc. There are many variations of passages of Lorem Ipsum
+                    available, but the majority have suffered alteration in some form, by injected humour, or randomised
+                    words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you
+                    need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this
+                    the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with
+                    a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated
+                    Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+            </div>
+        </section>
+
 
     </div>
     <footer>
-        <nav class="navbar fixed-bottom navbar-light bg-light">
-            <a class="navbar-brand" href="#">Fixed bottom</a>
+        <nav class="navbar fixed-bottom navbar-dark bg-dark" style=" border-top: 3px solid #4aaaa5; text-align: center">
+            <a class="navbar-brand" href="#">
+                Copyright ©
+            </a>
         </nav>
     </footer>
 

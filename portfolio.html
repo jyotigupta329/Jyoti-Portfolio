@@ -3,72 +3,161 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Basic-Portfolio</title>
+    <title>Bootstrap-Portfolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
     <style>
-        .footer {
-            background: black;
-            height: 14px;
+        body {
+            height: 100%;
+            background-image: url("/Users/jyoti/Bootstrap-Portfolio/images/backgroundimg.png");
+        }
+
+        #headerStyle {
+            z-index: 99;
+            width: 100%;
+            margin: 0 0 30px;
+            overflow: auto;
+            color: #fff;
+            background: #fff;
+            border-bottom: 2px solid #ccc;
+        }
+
+        #icon {
+            float: left;
+            color: white;
+            padding: 10px;
+            background: #4aaaa5;
+            font-family: Georgia, Times, "Times New Roman", serif;
+            font-size: 25px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        nav a {
+            display: inline-block;
+            padding-left: 15px;
+            margin-left: 15px;
+            line-height: 18px;
+            color: #999;
+            text-decoration: none;
+            border-left: 1px solid #efefef;
+            text-align: center;
+        }
+
+        nav a:first-child {
+            border-left: 0 none;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 960px;
+            margin: 0 auto;
+            clear: both;
+            background: white;
+        }
+
+        #bodyHeading {
+            height: 28px;
+            font-family: 'Georgia', Times, Times New Roman, serif;
+            margin-left: 26px;
+            font-size: 20px;
+            padding-top: 30px;
+            color: #01B6AD;
+        }
+
+        hr {
+            border: 1px solid #cccccc;
+            width: 900px;
+        }
+
+        section {
+            padding: 10px;
+            margin: 10px;
         }
     </style>
 </head>
 
 <body>
 
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand col-md-8" href="#">Jyoti Kumari</a>
-            <div class="collapse navbar-collapse col-md-4" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-5px">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
+    <header id="headerStyle">
+        <div class="container">
+            <section>
+                <nav class="navbar navbar-light navbar-expand-md bg-white justify-content-center">
 
-            </div>
-        </nav>
+                    <a href="/" class="navbar-brand d-flex w-50 mr-auto" style="float: left">
+                        <div id="icon">JYOTI KUMARI</div>
+                    </a>
+
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+                        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </section>
+
+        </div>
     </header>
+
+    <section style="height: 40px">
+    </section>
+
     <div class="container">
 
         <!-- <div class="content"> -->
 
-        <div class="name">Portfolio</div>
+        <div id="bodyHeading">Portfolio</div>
         <hr>
         <div class="row">
-            <div class=="col-md-12">
-                <div class=="col-md-6">
-                    <img src="http://placehold.it/200x200" class="border">
-                </div>
+            <div class="col mx-auto">
+                <img src="http://placehold.it/200x200" class="img-fluid img-thumbnail">
+            </div>
+            <div class="col">
+                <img src="http://placehold.it/200x200" class="img-fluid img-thumbnail">
             </div>
         </div>
         <div class="row">
-            <div class=="col-md-6">
-                <img src="http://placehold.it/200x200" class="border">
+            <div class="col">
+                <img src="http://placehold.it/200x200" class="img-fluid img-thumbnail">
             </div>
 
-            <div class=="col-md-6">
-                <img src="http://placehold.it/200x200" class="border">
+            <div class="col">
+                <img src="http://placehold.it/200x200" class="img-fluid img-thumbnail">
             </div>
         </div>
 
         <div class="row">
-            <div class=="col-md-6">
-                <img src="http://placehold.it/200x200" class="border">
+            <div class="col">
+                <img src="http://placehold.it/200x200" class="img-fluid img-thumbnail">
+            </div>
+            <div class="col">
+
             </div>
         </div>
     </div>
 
     <footer>
-        <nav class="navbar fixed-bottom navbar-light bg-light">
-            <a class="navbar-brand" href="#">Fixed bottom</a>
+        <nav class="navbar fixed-bottom navbar-dark bg-dark" style=" border-top: 3px solid #4aaaa5; text-align: center">
+            <a class="navbar-brand" href="#">
+                Copyright ©
+            </a>
         </nav>
     </footer>
 
