@@ -80,6 +80,39 @@
             margin: 10px;
         }
 
+        h1 {
+            padding-bottom: 20px;
+            font-size: 30px;
+            line-height: 49px;
+            border-bottom: 3px solid #ddd;
+            font-family: Georgia, Times, "Times New Roman", serif;
+            font-weight: 700;
+            color: #4aaaa5;
+        }
+
+        .main-section {
+            float: left;
+            width: 100%;
+            max-width: 960px;
+            padding: 30px;
+            margin: 0 0 40px;
+            background: #fff;
+            border: 1px solid #ddd;
+        }
+
+        p {
+            font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+            line-height: 24px;
+            font-size: 16px;
+        }
+
+        img {
+            float: left;
+            width: 200px;
+            height: auto;
+            margin-top: 10px;
+            margin-right: 25px;
+        }
     </style>
 </head>
 
@@ -114,36 +147,33 @@
         </div>
     </header>
     <div class="container">
-        <div>
-            <section>
-                <form>
-                    <div class="form-group">
-                        <label for="usr">Name:</label>
-                        <input type="text" class="form-control" id="usr" placeholder="John Smith">
-                    </div>
-                    <div class="form-group">
-                        <label for="pwd">Email:</label>
-                        <input type="password" class="form-control" id="pwd" placeholder="example@gmail.com">
-                    </div>
+        <section class="main-section">
+            <h1> Contact</h1>
+            <form>
+                <div class="form-group">
+                    <label for="usr">Name:</label>
+                    <input type="text" class="form-control" id="usr" placeholder="John Smith">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Email:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="example@gmail.com">
+                </div>
 
-                    <div class="form-group">
-                        <label for="pwd">Message:</label>
-                        <textarea class="form-control" rows="5" id="comment" placeholder="Message"></textarea>
-                    </div>
-                </form>
-            </section>
-
-        </div>
-
+                <div class="form-group">
+                    <label for="pwd">Message:</label>
+                    <textarea class="form-control" rows="5" id="comment" placeholder="Message"></textarea>
+                </div>
+            </form>
+        </section>
     </div>
     <!-- <div class="content"> -->
 
     <!-- Stickey footer -->
     <footer>
         <nav class="navbar fixed-bottom navbar-dark bg-dark" style=" border-top: 3px solid #4aaaa5; text-align: center">
-            <a class="navbar-brand" href="#" >
-                    Copyright © 
-             </a>
+            <a class="navbar-brand" href="#">
+                Copyright ©
+            </a>
         </nav>
     </footer>
 
