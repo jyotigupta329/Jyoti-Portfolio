@@ -3,155 +3,86 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap-Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-    <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <!-- Link to CSS  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
 
-<style>
-    body {
-        height: 100%;
-        background-image: url("./images/backgroundimg.png");
-    }
-
-    #headerStyle {
-        z-index: 99;
-        width: 100%;
-        margin: 0 0 30px;
-        overflow: auto;
-        color: #fff;
-        background: #fff;
-        border-bottom: 2px solid #ccc;
-    }
-
-    #icon {
-        float: left;
-        color: white;
-        padding: 10px;
-        background: #4aaaa5;
-        font-family: Georgia, Times, "Times New Roman", serif;
-        font-size: 25px;
-        text-align: center;
-        text-decoration: none;
-    }
-
-    nav a {
-        display: inline-block;
-        padding-left: 15px;
-        margin-left: 15px;
-        line-height: 18px;
-        color: #999;
-        text-decoration: none;
-        border-left: 1px solid #efefef;
-        text-align: center;
-    }
-
-    nav a:first-child {
-        border-left: 0 none;
-    }
-
-    .container {
-        width: 100%;
-        max-width: 960px;
-        margin: 0 auto;
-        clear: both;
-        background: white;
-    }
-
-    #bodyHeading {
-        height: 28px;
-        font-family: 'Georgia', Times, Times New Roman, serif;
-        margin-left: 26px;
-        font-size: 20px;
-        padding-top: 30px;
-        color: #01B6AD;
-    }
-
-    hr {
-        border: 1px solid #cccccc;
-        width: 900px;
-    }
-
-    section {
-        padding: 10px;
-        margin: 10px;
-    }
-
-    h1 {
-        padding-bottom: 20px;
-        font-size: 30px;
-        line-height: 49px;
-        border-bottom: 3px solid #ddd;
-        font-family: Georgia, Times, "Times New Roman", serif;
-        font-weight: 700;
-        color: #4aaaa5;
-    }
-
-    .main-section {
-        float: left;
-        width: 100%;
-        max-width: 960px;
-        padding: 30px;
-        margin: 0 0 40px;
-        background: #fff;
-        border: 1px solid #ddd;
-    }
-
-    p {
-        font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-        line-height: 24px;
-        font-size: 16px;
-    }
-
-    img {
-        float: left;
-        width: 200px;
-        height: auto;
-        margin-top: 10px;
-        margin-right: 25px;
-    }
-</style>
-
 <body>
-    <header id="headerStyle">
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo">
+                    <img class="img-responsive" id="imgIcon" src="./images/jLogoImage.png">
+                </a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <a class="nav-link" href="index.html" style="color: white">About</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="portfolio.html" style="color: white">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="contact.html" style="color: white">Contact</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="https://www.linkedin.com/in/jyotigupta329/" class="brand-logo" target="_blank">
+                            <img src="./images/linkdin.png" class="linkdin" />
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="https://www.linkedin.com/in/jyotigupta329/" class="brand-logo" target="_blank">
+                            <img src="./images/linkdin.png" class="linkdin" />
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="https://github.com/jyotigupta329" class="brand-logo" target="_blank">
+                            <img src="./images/github.png" class="github" />
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li>
+            <a class="nav-link" href="index.html" style="color: black">About</a>
+        </li>
+        <li>
+            <a class="nav-link" href="portfolio.html" style="color: black">Portfolio</a>
+        </li>
+        <li>
+            <a class="nav-link" href="contact.html" style="color: black">Contact</a>
+        </li>
+        <ul>
+            <a class="nav-link" href="https://www.linkedin.com/in/jyotigupta329/" class="brand-logo" target="_blank">
+                <img src="./images/linkdin.png" class="linkdin" />
+            </a>
+
+            <a class="nav-link" href="https://www.linkedin.com/in/jyotigupta329/" class="brand-logo" target="_blank">
+                <img src="./images/linkdin.png" class="linkdin" />
+            </a>
+
+            <a class="nav-link" href="https://github.com/jyotigupta329" class="brand-logo" target="_blank">
+                <img src="./images/github.png" class="github" />
+            </a>
+        </ul>
+    </ul>
+    <main>
         <div class="container">
-            <section>
-                <nav class="navbar navbar-light navbar-expand-md bg-white justify-content-center">
-
-                    <a href="/" class="navbar-brand d-flex w-50 mr-auto" style="float: left">
-                        <div id="icon">JYOTI KUMARI</div>
-                    </a>
-
-
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
-                        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="portfolio.html">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </section>
-
-        </div>
-    </header>
-
-    <div class="container">
-        <section class="main-section">
             <h1> About Me</h1>
             <div>
                 <img src="http://placehold.it/200x200" alt="Profile picture">
@@ -172,18 +103,25 @@
                     a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated
                     Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
             </div>
-        </section>
+        </div>
+
+    </main>
 
 
-    </div>
-    <footer>
-        <nav class="navbar fixed-bottom navbar-dark bg-dark" style=" border-top: 3px solid #4aaaa5; text-align: center">
-            <a class="navbar-brand" href="#">
-              
-            </a>
-        </nav>
+
+    <!-- Stickey footer -->
+    <footer class="page-footer">
+        <div class="footer-copyright">
+            <div class="container">
+                © 2014 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
     </footer>
 
+    <script src="./assets/javascript/script.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 </body>
 
 </html>

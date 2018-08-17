@@ -1,213 +1,38 @@
+    
+        #imgIcon {
+            height: 40px;
+            width: 40px;
+            margin-top: 10px;
+        }
 
-body {
-      /* background: #dddddd; */
-      height: 100%;
-      background-image: url("../images/backgroundimg.png")
+        .linkdin {
+            background-image: url("./images/jLogoImage.png");
+            height: 30px;
+            width: 30px;
+        }
+
+        .github {
+            background-image: url("./images/jLogoImage.png");
+            height: 30px;
+            width: 30px;
+        }
+        nav{
+            background-color: black;
+        }
+
+        .page-footer{
+            background-color: black;
+            padding: 0px;
+        }
+
+    body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background: whitesmoke;
   }
-header{
-    position: fixed;
-    width: 100%;
-    height: 60px; 
-    top: 0%;
-    left: 0%;
-    background-color:white;
-    margin-bottom: 20px;
-    border-bottom: 3px solid #cccccc;
-}
 
-a {
-    padding: 15px;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: inline-block;
-    color:  #666666;
-    background-color: white;
-    text-align: center;
-    padding: 200 px;
-    text-decoration: none;
-}
-
-hr{
-    border: 1px solid #cccccc;
-    width: 900px;
-}
-
-
-ul {
-    list-style-type: none;
-    margin-left:  933px;
-    padding-top: 0px;
-    padding-right: 20px;
-    overflow: hidden;
-    background-color: white;
-    margin-top: 12px;
-}
-
-h2 {
-    padding-top: 10px;
-    padding-bottom: 0px;
-    margin-top: 0px;
-    margin-left: 241px;
-    width: 172px;
-    color: white;
-    background-color: #01B6AD;
-    margin-bottom: 20px;
-    height: 50px; 
-    font-size: 25px;
-    text-align: center;
-    float: left;
-}
-
-
-#wrapper{
-    width: 960px;
-    margin-left: 200px;
-    margin-right: 200px;
-}
-
-
-
-
-#borderstyle{
-    border-bottom: 3px solid #cccccc;
-    width: 100%;
-}
-
-
-.content{
-    box-sizing: border-box;
-    background: #ffffff;
-    width: 100%;
-    height: 500px;
-    margin-top: 84px;
-    margin-bottom: 50px;
-    clear: both;
-    margin-left: 35px;
-}
-
-img {
-    float: left;
-    width:170px;
-    height:170px;
-    margin-left: 26px;
-    margin-top: 11px;
-    margin-right: 17px;
-    margin-bottom: 8px;
-}
-
-div.name{
-    height: 28px;
-    font-family: 'Georgia', Times, Times New Roman, serif;
-    margin-left: 26px;
-    font-size: 20px;
-    padding-top: 30px;
-    color: #01B6AD;
-}
-
-p { 
-margin-left: 26px;
-font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-line-height: 24px;
-font-size: 14px;
-margin-right: 26px
-}
-
-footer{
-    width: 100%;
-    height: 50px; 
-    background-color: #666666;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    text-align: center;
-    color: #777777;
-    border-top: 4px solid #01B6AD;
-}
-
-label {
-    height: 28px;
-    font-family: 'Georgia', Times, Times New Roman, serif;
-    margin-left: 26px;
-    font-size: 20px;
-    padding-top: 30px;
-    color: #777777;
-    margin-left: 26px;
-    line-height: 24px;
-    font-size: 14px;
-    margin-right: 26px
-}
-
-input {
-    margin-left: 26px;
-    margin-right: 26px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    height: 28px;
-    width: 900px;
-}
-
-button {
-        background-color: #01B6AD; /* Green */
-        border: none;
-        color: white;
-        padding: 7px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin-left: 26px;
-        margin-right: 26px;
-        margin-top: 26px;
-        cursor: pointer; 
-        width: 104px;
-}
-
-.button:hover {
-    background-color:#01B6AD;
-    color: white;
-}
-
-textarea{
-    width: 900px;
-    margin-left: 26px;
-    margin-right: 26px;
-    margin-top: 5px;
-    height: 165px;
-}
-
-.column {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
-}
-
-/* Clearfix (clear floats) */
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.portfolioImg{
-    width: 250px;
-    height: 127px;
-    background: #01B6AD;
-    float: left;
-    }
-
-    .overlap {
-        margin-left: 26px;
-        margin-top: 110px;
-        width: 240px;
-        color: #ffffff;
-        position: absolute;
-        text-align: center;
-        background: #01B6AD;
-        border: 0px solid #01B6AD;
-        padding: 5px;
-      }
+  main {
+    flex: 1 0 auto;
+  }
+    
