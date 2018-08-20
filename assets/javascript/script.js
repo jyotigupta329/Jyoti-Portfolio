@@ -16,6 +16,7 @@ $(document).ready(function () {
 var btns = document.querySelectorAll('a');
 var clipboard = new ClipboardJS(btns);
 clipboard.on('success', function(e) {
+    alert("Yay! My email address has been copied to your clipboard ✅" );
     console.log(e);
 });
 clipboard.on('error', function(e) {
