@@ -11,6 +11,11 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+
     <!-- Link to CSS  -->
     <link rel="stylesheet" href="./assets/css/style.css">
 
@@ -26,65 +31,80 @@
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger">
                     <i class="material-icons">menu</i>
                 </a>
-                <ul class="right hide-on-med-and-down">
+                <ul class="right hide-on-med-and-down" style="margin-right: 200px;">
                     <li>
-                        <a class="nav-link" href="index.html" style="color: white">About</a>
+                        <a class="nav-link" href="index.html" style="color: white; font-size: 20px">about</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="portfolio.html" style="color: white">Portfolio</a>
+                        <a class="nav-link" href="portfolio.html" style="color: white; font-size: 20px">portfolio</a>
+                    </li>
+                    <li class="email">
+                        <span id="email-tooltip" tooltip="Yay! My email address has been copied to your clipboard ✅" class="success">
+                            <a class="fa fa-envelope" id="email" data-clipboard-text="jyoti.gupta329@gmail.com"></a>
+                        </span>
                     </li>
                     <li>
-                        <a class="nav-link" href="contact.html" style="color: white">Contact</a>
+                        <a href="https://www.linkedin.com/in/jyotigupta329/" class="fa fa-linkedin" target="_blank"></a>
                     </li>
                     <li>
-                        <a class="nav-link" href="https://www.linkedin.com/in/jyotigupta329/" class="brand-logo" target="_blank">
-                            <img src="./images/linkdin.png" class="linkdin" />
+                        <a href="https://github.com/jyotigupta329" class="fa fa-github" target="_blank">
                         </a>
                     </li>
-                    <li>
-                        <a class="nav-link" href="https://www.linkedin.com/in/jyotigupta329/" class="brand-logo" target="_blank">
-                            <img src="./images/linkdin.png" class="linkdin" />
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="https://github.com/jyotigupta329" class="brand-logo" target="_blank">
-                            <img src="./images/github.png" class="github" />
-                        </a>
-                    </li>
-
                 </ul>
             </div>
         </nav>
     </div>
-
-    <ul class="sidenav" id="mobile-demo">
+    <ul class="sidenav" id="mobile-demo" style="background: black ; height:46%; width: 100%">
         <li>
-            <a class="nav-link" href="index.html" style="color: black">About</a>
+            <a class="nav-link" href="index.html" style="color: white; text-align: center; font-size: 25px">about</a>
         </li>
+        <hr style="color: grey">
         <li>
-            <a class="nav-link" href="portfolio.html" style="color: black">Portfolio</a>
+            <a class="nav-link" href="portfolio.html" style="color: white; text-align: center; font-size: 25px">portfolio</a>
         </li>
+        <hr style="color: grey">
         <li>
-            <a class="nav-link" href="contact.html" style="color: black">Contact</a>
+            <span id="email-tooltip" tooltip="Yay! My email address has been copied to your clipboard ✅" class="success">
+                <a class="fa fa-envelope" id="email" data-clipboard-text="jyoti.gupta329@gmail.com" style="color: white; font-size: 30px ; margin-left: 46%;"></a>
+            </span>
         </li>
-        <ul>
-            <a class="nav-link" href="https://www.linkedin.com/in/jyotigupta329/" class="brand-logo" target="_blank">
-                <img src="./images/linkdin.png" class="linkdin" />
+        <hr style="color: grey">
+        <li>
+            <a class="fa fa-linkedin fa-3x" href="https://www.linkedin.com/in/jyotigupta329/" target="_blank" style="color: white; font-size: 30px; margin-left: 39%;"></a>
+        </li>
+        <hr style="color: grey">
+        <li>
+            <a class="fa fa-github fa-4x" href="https://github.com/jyotigupta329" target="_blank" style="color: white ;  font-size: 30px;  margin-left: 39%;">
             </a>
-
-            <a class="nav-link" href="https://www.linkedin.com/in/jyotigupta329/" class="brand-logo" target="_blank">
-                <img src="./images/linkdin.png" class="linkdin" />
-            </a>
-
-            <a class="nav-link" href="https://github.com/jyotigupta329" class="brand-logo" target="_blank">
-                <img src="./images/github.png" class="github" />
-            </a>
-        </ul>
+        </li>
     </ul>
+
     <main>
-        <div class="container">
-            <h1> About Me</h1>
-            <div>
+        <div class="container" style="padding-top: 30px;">
+            <h1 style="font-size: 50px;font-weight: bold;margin-left: 12px"> about me</h1>
+
+            <div class="row">
+                <div class="col s12  m6 l4">
+                    <img src="http://placehold.it/200x200" alt="Profile picture" style="height: 100%; width: 100%">
+                </div>
+                <div class="col s12  m6 l8">
+                    <p>
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by
+                        injected humour, or randomised words which don't look even slightly believable. If you are going
+                        to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
+                        the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks
+                        as necessary, making this the first true generator on the Internet. </p>
+                    <p>It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to
+                        generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from
+                        repetition, injected humour, or non-characteristic words etc. There are many variations of passages
+                        of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,
+                        or randomised words which don't look even slightly believable. If you are going to use a passage
+                        of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+
+                </div>
+            </div>
+
+            <!-- <div>
                 <img src="http://placehold.it/200x200" alt="Profile picture">
                 <p>
                     There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by
@@ -98,11 +118,8 @@
                     available, but the majority have suffered alteration in some form, by injected humour, or randomised
                     words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you
                     need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
-                <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this
-                    the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with
-                    a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated
-                    Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
-            </div>
+
+            </div> -->
         </div>
 
     </main>
@@ -113,8 +130,8 @@
     <footer class="page-footer">
         <div class="footer-copyright">
             <div class="container">
-                © 2014 Copyright Text
-                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                Jyoti Kumari
+                <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
             </div>
         </div>
     </footer>

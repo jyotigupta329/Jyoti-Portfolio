@@ -12,11 +12,18 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
 
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
 </head>
 
 <body>
+
+    <!-- clipboard -->
+
+
     <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper">
@@ -36,19 +43,17 @@
                     <li>
                         <a class="nav-link" href="contact.html" style="color: white">Contact</a>
                     </li>
-                    <li>
-                        <a class="nav-link" href="https://www.linkedin.com/in/jyotigupta329/" class="brand-logo" target="_blank">
-                            <img src="./images/linkdin.png" class="linkdin" />
-                        </a>
+
+                    <li class="email">
+                        <span id="email-tooltip" tooltip="Yay! My email address has been copied to your clipboard ✅" class="success" style="background: black; color: white">
+                            <a class="fa fa-envelope" id="email" data-clipboard-text="jyoti.gupta329@gmail.com"></a>
+                        </span>
                     </li>
                     <li>
-                        <a class="nav-link" href="https://www.linkedin.com/in/jyotigupta329/" class="brand-logo" target="_blank">
-                            <img src="./images/linkdin.png" class="linkdin" />
-                        </a>
+                        <a href="https://www.linkedin.com/in/jyotigupta329/" class="fa fa-linkedin" target="_blank"></a>
                     </li>
                     <li>
-                        <a class="nav-link" href="https://github.com/jyotigupta329" class="brand-logo" target="_blank">
-                            <img src="./images/github.png" class="github" />
+                        <a href="https://github.com/jyotigupta329" class="fa fa-github" target="_blank">
                         </a>
                     </li>
 
@@ -69,41 +74,21 @@
             <a class="nav-link" href="contact.html" style="color: black">Contact</a>
         </li>
         <ul>
-            <a class="nav-link" href="https://www.linkedin.com/in/jyotigupta329/" class="brand-logo" target="_blank">
-                <img src="./images/linkdin.png" class="linkdin" />
-            </a>
-
-            <a class="nav-link" href="https://www.linkedin.com/in/jyotigupta329/" class="brand-logo" target="_blank">
-                <img src="./images/linkdin.png" class="linkdin" />
-            </a>
-
-            <a class="nav-link" href="https://github.com/jyotigupta329" class="brand-logo" target="_blank">
-                <img src="./images/github.png" class="github" />
-            </a>
+            <li class="email">
+                <span id="email-tooltip" tooltip="Yay! My email address has been copied to your clipboard ✅" class="success" style="background: black; color: white">
+                    <a class="fa fa-envelope" id="email" data-clipboard-text="jyoti.gupta329@gmail.com"></a>
+                </span>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/jyotigupta329/" class="fa fa-linkedin" target="_blank"></a>
+            </li>
+            <li>
+                <a href="https://github.com/jyotigupta329" class="fa fa-github" target="_blank">
+                </a>
+            </li>
         </ul>
     </ul>
-    <main>
-        <div class="container">
-            <section class="main-section">
-                <h1> Contact</h1>
-                <form>
-                    <div class="form-group">
-                        <label for="usr">Name:</label>
-                        <input type="text" class="form-control" id="usr" placeholder="Jyoti Kumari">
-                    </div>
-                    <div class="form-group">
-                        <label for="pwd">Email:</label>
-                        <input type="password" class="form-control" id="pwd" placeholder="jyoti.gupta329@gmail.com">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="pwd">Message:</label>
-                        <textarea class="form-control" rows="5" id="comment" placeholder="Message"></textarea>
-                    </div>
-                </form>
-            </section>
-        </div>
-    </main>
+    
 
     <!-- <div class="content"> -->
 
@@ -116,6 +101,7 @@
             </div>
         </div>
     </footer>
+
 
     <script src="./assets/javascript/script.js"></script>
     <!-- Compiled and minified JavaScript -->
