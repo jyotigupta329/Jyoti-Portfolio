@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jyoti Kumari</title>
+    <title>Bootstrap-Portfolio</title>
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!--Import Google Icon Font-->
@@ -12,18 +12,16 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
-
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
 
-    <!-- style css -->
+    <!-- Link to CSS  -->
     <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
 
 <body>
-
     <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper">
@@ -41,16 +39,12 @@
                         <a class="nav-link" href="portfolio.html" style="color: white; font-size: 20px">portfolio</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="https://drive.google.com/file/d/1DUf--jYXy18QLpZLdioNF4vVXUnORFp6/view" style="color: white; font-size: 20px"
-                            target="_blank">resume</a>
+                        <a class="nav-link" href="https://drive.google.com/file/d/1DUf--jYXy18QLpZLdioNF4vVXUnORFp6/view" style="color: white; font-size: 20px" target="_blank">resume</a>
                     </li>
-                    <!-- <li class="email">
+                    <li class="email">
                         <span id="email-tooltip" tooltip="Yay! My email address has been copied to your clipboard ✅" class="success">
                             <a class="fa fa-envelope" id="email" data-clipboard-text="jyoti.gupta329@gmail.com"></a>
                         </span>
-                    </li> -->
-                    <li>
-                        <a  href="mailto:jyoti.gupta329@gmail.com" class="fa fa-envelope"></a>
                     </li>
                     <li>
                         <a href="https://www.linkedin.com/in/jyotigupta329/" class="fa fa-linkedin" target="_blank"></a>
@@ -65,15 +59,11 @@
     </div>
     <ul class="sidenav" id="mobile-demo" style="background: black ; height:46%; width: 100%">
         <li>
-            <a class="nav-link" href="aboutMe.html" style="color: white; text-align: center; font-size: 25px">about</a>
+            <a class="nav-link" href="index.html" style="color: white; text-align: center; font-size: 25px">about</a>
         </li>
         <hr style="color: grey">
         <li>
             <a class="nav-link" href="portfolio.html" style="color: white; text-align: center; font-size: 25px">portfolio</a>
-        </li>
-        <hr style="color: grey">
-        <li>
-            <a class="nav-link" href="portfolio.html" style="color: white; font-size: 20px">resume</a>
         </li>
         <hr style="color: grey">
         <li>
@@ -83,21 +73,23 @@
         </li>
         <hr style="color: grey">
         <li>
-            <a class="fa fa-linkedin fa-3x" href="https://www.linkedin.com/in/jyotigupta329/" style="color: white; font-size: 30px; margin-left: 39%;"
-                target="_blank"></a>
+            <a class="fa fa-linkedin fa-3x" href="https://www.linkedin.com/in/jyotigupta329/" target="_blank" style="color: white; font-size: 30px; margin-left: 39%;"></a>
         </li>
         <hr style="color: grey">
         <li>
-            <a class="fa fa-github fa-4x" href="https://github.com/jyotigupta329" style="color: white ;  font-size: 30px;  margin-left: 39%;"
-                target="_blank">
+            <a class="fa fa-github fa-4x" href="https://github.com/jyotigupta329" target="_blank" style="color: white ;  font-size: 30px;  margin-left: 39%;">
             </a>
         </li>
     </ul>
 
     <main>
-        <!-- Start of portfolio -->
+        <div id="home" class="container" style="padding-top: 30px">
+            <img src="./images/jyoti.png" alt="Profile picture" style="width: 500px; height: 500px;">
+        </div>
+
+        <!-- My recent work -->
         <div class="container" style="padding-top: 30px;">
-            <h1 style="font-size: 50px;font-weight: bold; margin-left: 12px">portfolio</h1>
+            <h1 style="font-size: 30px;font-weight: bold; margin-left: 12px; text-align: center;">My recent works</h1>
             <div>
                 <!-- Row 1 -->
                 <div class="row">
@@ -166,104 +158,9 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Row 2 -->
-                <div class="row">
-                    <div class="col s12  m6 l4">
-                        <div class="card small">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="./images/train.png">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">Train Scheduler
-                                    <i class="material-icons right">more_vert</i>
-                                </span>
-                                <p>
-                                    <a href="https://github.com/jyotigupta329/Train-Scheduler">This is a link</a>
-                                </p>
-                            </div>
-                            <div class="card-reveal">
-                                <span class="card-title grey-text text-darken-4">Train sScheduler
-                                    <i class="material-icons right">close</i>
-                                </span>
-                                <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12 m6 l4">
-                        <div class="card small">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="./images/gif.gif">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">Gif-Tastic
-                                    <i class="material-icons right">more_vert</i>
-                                </span>
-                                <p>
-                                    <a href="https://github.com/jyotigupta329/gifTastic">This is a link</a>
-                                </p>
-                            </div>
-                            <div class="card-reveal">
-                                <span class="card-title grey-text text-darken-4">Gif-Tastic
-                                    <i class="material-icons right">close</i>
-                                </span>
-                                <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12 m6 l4">
-                        <div class="card small">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="./images/food.png">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">Project_1
-                                    <i class="material-icons right">more_vert</i>
-                                </span>
-                                <p>
-                                    <a href="https://github.com/jyotigupta329/project_one">This is a link</a>
-                                </p>
-                            </div>
-                            <div class="card-reveal">
-                                <span class="card-title grey-text text-darken-4">Project_1
-                                    <i class="material-icons right">close</i>
-                                </span>
-                                <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Row 3 -->
-                <div class="row">
-                    <div class="col s12  m6 l4">
-                        <div class="card small">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="./images/psychicGame.png">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">Psychic Game
-                                    <i class="material-icons right">more_vert</i>
-                                </span>
-                                <p>
-                                    <a href="https://github.com/jyotigupta329/Psychic-Game">This is a link</a>
-                                </p>
-                            </div>
-                            <div class="card-reveal">
-                                <span class="card-title grey-text text-darken-4">Psychic Game
-                                    <i class="material-icons right">close</i>
-                                </span>
-                                <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Row 3 ends -->
             </div>
-        </div>
-
     </main>
 
-    </div>
 
     <!-- Stickey footer -->
     <footer class="page-footer">
