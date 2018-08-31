@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap-Portfolio</title>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+
+    <!-- Link to CSS  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <style>
+        .img-comp-container {
+            position: relative;
+            height: 500px;
+            /*should be the same height as the images*/
+        }
+
+        .img-comp-img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .img-comp-img img {
+            /* display: block; */
+            vertical-align: middle;
+        }
+
+        .img-comp-slider {
+            position: absolute;
+            z-index: 9;
+            cursor: ew-resize;
+            /*set the appearance of the slider:*/
+            width: 40px;
+            height: 40px;
+            background-color: #2196F3;
+            opacity: 0.7;
+            border-radius: 50%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="logo.html" class="brand-logo">
+                    <img class="img-responsive" id="imgIcon" src="./images/jLogoImage.png">
+                </a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down" style="margin-right: 200px;">
+                    <li>
+                        <a class="nav-link" href="index.html" style="color: white; font-size: 20px">about</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="portfolio.html" style="color: white; font-size: 20px">portfolio</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="https://drive.google.com/file/d/1DUf--jYXy18QLpZLdioNF4vVXUnORFp6/view" style="color: white; font-size: 20px"
+                            target="_blank">resume</a>
+                    </li>
+                    <li class="email">
+                        <span id="email-tooltip" tooltip="Yay! My email address has been copied to your clipboard ✅" class="success">
+                            <a class="fa fa-envelope" id="email" data-clipboard-text="jyoti.gupta329@gmail.com"></a>
+                        </span>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/jyotigupta329/" class="fa fa-linkedin" target="_blank"></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/jyotigupta329" class="fa fa-github" target="_blank">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <ul class="sidenav" id="mobile-demo" style="background: black ; height:55%; width: 100%">
+        <li>
+            <a class="nav-link" href="index.html" style="color: white; text-align: center; font-size: 25px">about</a>
+        </li>
+        <hr style="color: grey">
+        <li>
+            <a class="nav-link" href="portfolio.html" style="color: white; text-align: center; font-size: 25px">portfolio</a>
+        </li>
+        <hr style="color: grey">
+        <li>
+            <span id="email-tooltip" tooltip="Yay! My email address has been copied to your clipboard ✅" class="success">
+                <a class="fa fa-envelope" id="email" data-clipboard-text="jyoti.gupta329@gmail.com" style="color: white; font-size: 30px ; margin-left: 46%;"></a>
+            </span>
+        </li>
+        <hr style="color: grey">
+        <li>
+            <a class="nav-link" href="https://drive.google.com/file/d/1DUf--jYXy18QLpZLdioNF4vVXUnORFp6/view" style="color: white; font-size: 25px; text-align: center"
+                target="_blank">resume</a>
+        </li>
+        <hr style="color: grey">
+        <li>
+            <a class="fa fa-linkedin fa-3x" href="https://www.linkedin.com/in/jyotigupta329/" target="_blank" style="color: white; font-size: 30px; margin-left: 39%;"></a>
+        </li>
+        <hr style="color: grey">
+        <li>
+            <a class="fa fa-github fa-4x" href="https://github.com/jyotigupta329" target="_blank" style="color: white ;  font-size: 30px;  margin-left: 39%;">
+            </a>
+        </li>
+    </ul>
+
+    <main>
+        <!-- <div class="container" style="padding-top: 30px; background:whitesmoke">
+            <div class="img-comp-container">
+                <div class="img-comp-img">
+                    <img src="./images/jyoti1.png" width="100%" height="100%">
+                </div> 
+              <div class="img-comp-img img-comp-overlay">
+                    <img src="./images/jyoti1.png" width="100%" height="100%">
+                </div>
+            </div>
+        </div> -->
+
+
+        <!-- My recent work -->
+        <div class="container" style="padding-top: 30px;">
+            <h1 style="font-size: 30px;font-weight: bold; margin-left: 12px; text-align: center;">My recent works</h1>
+            <div>
+                <!-- Row 1 -->
+                <div class="row">
+                    <div class="col s12 m6 l4">
+                        <div class="card small">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="./images/gif.gif">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Gif-Tastic
+                                    <i class="material-icons right">more_vert</i>
+                                </span>
+                                <p>
+                                    <a href="https://jyotigupta329.github.io/gifTastic/" target="_blank">Deployed Link</a>
+
+                                    <a href="https://github.com/jyotigupta329/gifTastic" target="_blank" style="margin-left: 108px">github</a>
+                                </p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Gif-Tastic
+                                    <i class="material-icons right">close</i>
+                                </span>
+                                <p>Using GIPHY API to make a dynamic web page that populates with gifs of your choice.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m6 l4">
+                        <div class="card small">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="./images/wordGuess.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Word Guess
+                                    <i class="material-icons right">more_vert</i>
+                                </span>
+                                <p>
+                                    <a href="https://jyotigupta329.github.io/Word-Guess-Game/" target="_blank">Deployed Link</a>
+                                    <a href="https://github.com/jyotigupta329/Word-Guess-Game" target="_blank" style="margin-left: 108px">github</a>
+                                </p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Word Guess
+                                    <i class="material-icons right">close</i>
+                                </span>
+                                <p>Guess word.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l4">
+                        <div class="card small">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="./images/trivia.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Trivia Game
+                                    <i class="material-icons right">more_vert</i>
+                                </span>
+                                <p>
+                                    <a href="https://jyotigupta329.github.io/TriviaGame/" target="_blank">Deployed Link</a>
+                                    <a href="https://github.com/jyotigupta329/TriviaGame" target="_blank" style="margin-left: 108px">github</a>
+                                </p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Trivia Game
+                                    <i class="material-icons right">close</i>
+                                </span>
+                                <p>Quiz Game.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <div class="fixed-action-btn navbar-fixed" style="bottom: 60px; right: 24px;">
+        <a href="#" id="scroll" class="btn-floating btn-large black ">
+            <i class="large material-icons">arrow_upward</i>
+        </a>
+    </div>
+
+    <!-- Stickey footer -->
+    <footer class="page-footer">
+        <div class="footer-copyright">
+            <div class="container">
+                <a href="index.html" style="color: white; font-size: 20px"> © 2018 Jyoti Kumari</a>
+                <a href="index.html" style="color: white; margin-left: 550px; font-size: 20px">about</a>
+                <span></span>
+                <a href="portfolio.html" style="color: white; margin-left: 30px; font-size: 20px">portfolio</a>
+                <span></span>
+                <a href="https://drive.google.com/file/d/1DUf--jYXy18QLpZLdioNF4vVXUnORFp6/view" style="color: white; margin-left: 30px; font-size: 20px"
+                    target="_blank">resume</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/javascript/script.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+</body>
+
+</html>
