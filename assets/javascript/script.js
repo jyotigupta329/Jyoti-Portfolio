@@ -9,6 +9,9 @@ $(document).ready(function () {
   $('.sidenav').sidenav();
   // tooltip
   $('.tooltipped').tooltip({ enterDelay: 1000 });
+
+  // Contact modal
+  $('.modal').modal();
 });
 
 // copy text to clip board

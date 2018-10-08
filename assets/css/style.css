@@ -55,4 +55,15 @@
    main {
     flex: 1 0 auto;
    }
+
+   h4{
+    color: #191919; 
+   }
+
+   h5{
+    color: #191919; 
+   }
     
+   p{
+    color: #191919;
+   }
